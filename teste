@@ -1,0 +1,54 @@
+public class Main {
+// Definindo a classe "Pessoa"
+class Carro {
+    // Atributos da classe
+    private String marca, modelo, cor; // Atributo privado para encapsulamento
+    private int ano, velocidade;   // Atributo privado para encapsulamento
+    
+    // Método construtor da classe para inicializar os atributos
+    Carro(String marca, String modelo, String cor, int idade, int ano, int velocidade) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.cor = cor;
+        this.ano = ano;
+        this.velocidade = velocidade;
+    }
+    
+    // Método getter para obter o nome da pessoa
+    public String getMarca() {
+        return marca;
+    }
+    
+    public String getModelo() {
+        return modelo;
+    }
+
+    public String getCor() {
+        return cor;
+    }
+
+    // Método getter para obter a idade da pessoa
+    public int getAno() {
+        return ano;
+    }
+
+    public int getVelocidade() {
+        return velocidade;
+    }
+}
+
+// Classe principal que contém o método main
+public class Main {
+    public static void main(String[] args) {
+        // Criando um objeto da classe Carro chamado "Carro1"
+        Carro Carro1 = new Carro("Pagani", "Zonda", "Preto", 2022, 400);
+        
+        // Usando os métodos getters para obter e imprimir as informações da pessoa
+        System.out.println("Marca: " + Carro1.getMarca());
+        System.out.println("Modelo: " + Carro1.getModelo());
+        System.out.println("Cor: " + Carro1.getCor());
+        System.out.println("Ano: " + Carro1.getAno());
+        System.out.println("Velocidade: " + pessoa1.getVelocidade());
+    }
+}
+}
